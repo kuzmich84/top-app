@@ -1,6 +1,7 @@
 import type {NextPage} from 'next'
 import {Button, Htag, P, Rating, Tag} from '../components/'
 import {useState} from "react"
+import {withLayout} from "../layout/Layout"
 
 
 const Home: NextPage = (): JSX.Element => {
@@ -22,4 +23,4 @@ const Home: NextPage = (): JSX.Element => {
     )
 }
 
-export default Home
+export default withLayout(Home)
