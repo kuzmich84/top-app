@@ -2,5 +2,5 @@ import {ButtonHTMLAttributes, DetailedHTMLProps, HTMLAttributes, ReactNode} from
 
 export interface PProps extends DetailedHTMLProps<HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>{
     children: ReactNode;
-    fontSize?: '14' | '16' | '18';
+    size?: 's' | 'm' | 'l';
 }
