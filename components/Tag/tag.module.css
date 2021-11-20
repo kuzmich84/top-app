@@ -40,9 +40,9 @@
 
 .green {
 	color: var(--green);
-	background: var(--green-light);
 
 	border: 1px solid var(--primary);
+	background: var(--green-light);
 
 	font-weight: bold;
 }
