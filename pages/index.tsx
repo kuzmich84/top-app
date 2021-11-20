@@ -1,7 +1,8 @@
 import type {NextPage} from 'next'
 import {Button, Htag, P, Rating, Tag} from '../components/'
 import {useState} from "react"
-import {withLayout} from "../layout/Layout"
+import {withLayout} from "../HOC/withLayout"
+
 
 
 const Home: NextPage = (): JSX.Element => {
