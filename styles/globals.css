@@ -20,7 +20,7 @@ html {
 
 	color: var(--black);
 
-	background: #E5E5E5;
+	background: var(--grey-light);
 
 	font-family: "Noto Sans Display", sans-serif;
 }

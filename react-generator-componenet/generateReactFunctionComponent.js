@@ -43,9 +43,9 @@ module.exports = (name) => {
 }
 
 const component = (componentName) =>
-    `import React from 'react';
-import { ${componentName}Props } from './${componentName}.props';
-import styles from './${componentName}.module.css';
+    `import React from 'react'
+import { ${componentName}Props } from './${componentName}.props'
+import styles from './${componentName}.module.css'
 
 const ${componentName} = ({...props}: ${componentName}Props): JSX.Element => {
   return (
@@ -53,7 +53,7 @@ const ${componentName} = ({...props}: ${componentName}Props): JSX.Element => {
   );
 };
 
-export default ${componentName};
+export default ${componentName}
 `
 
 const propsInterface = (componentName) =>
