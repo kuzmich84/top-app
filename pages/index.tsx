@@ -4,6 +4,8 @@ import {useState} from "react"
 import {withLayout} from "../HOC/withLayout"
 import axios from "axios"
 import {MenuItem} from "../interfaces/menu.inerfase"
+import Input from "../components/Input/Input"
+import Textarea from "../components/Textarea/Textarea"
 
 
 const Home = ({menu, firstCategory}: HomeProps): JSX.Element => {
@@ -21,9 +23,8 @@ const Home = ({menu, firstCategory}: HomeProps): JSX.Element => {
             <Tag color="red" size="m">+79215777600</Tag>
             <Tag size="s">+79215777600</Tag>
             <Rating rating={rating} isEditable={true} setRating={setRating}/>
-            <ul>
-                {menu.map((m) => (<li key={m._id.secondCategory}>{m._id.secondCategory}</li>))}
-            </ul>
+            <div><Input placeholder="текст"/></div>
+            <div><Textarea placeholder="Текст отзыва"/></div>
 
         </div>
     )

@@ -35,7 +35,8 @@ export function Rating({isEditable = false, rating, setRating, ...props}: Rating
                     })}
                     onMouseEnter={() => changeDisplay(i + 1)}
                     onMouseLeave={() => changeDisplay(rating)}
-                    onClick={() => handlerClick(i + 1)}>
+                    onClick={() => handlerClick(i + 1)} key={i}>
+
                     <StarIcon
 
 
